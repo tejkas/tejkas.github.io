@@ -13,7 +13,7 @@ npm run preview  # serve dist/ exactly as it'll be served in production
 ## Writing a post
 
 Drop a `.md` file in `src/content/blog/`. The filename becomes the URL, so
-`ring-buffer.md` publishes at `/blog/ring-buffer/`.
+`my-new-post.md` publishes at `/blog/my-new-post/`.
 
 ```markdown
 ---

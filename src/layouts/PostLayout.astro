@@ -10,6 +10,11 @@ interface Props {
 
 const { post } = Astro.props;
 const { title, description, pubDate, updatedDate, tags } = post.data;
+
+// Only wire up Mermaid for posts that actually contain a diagram, so a
+// text-only post ships no JavaScript at all rather than a loader that
+// finds nothing to draw.
+const hasDiagram = /^[ \t]*```mermaid/m.test(post.body ?? '');
 ---
 
 <BaseLayout title={title} description={description} type="article">
@@ -52,5 +57,5 @@ const { title, description, pubDate, updatedDate, tags } = post.data;
     </div>
   </article>
 
-  <Mermaid />
+  {hasDiagram && <Mermaid />}
 </BaseLayout>
