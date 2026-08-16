@@ -1,0 +1,89 @@
+/* ---------------------------------------------------------------
+   theme.css — every design token in one place.
+
+   base.css only ever reads these via var(), so this file is the whole
+   surface for restyling the site. Change a colour or a size here and
+   it propagates everywhere.
+   --------------------------------------------------------------- */
+
+:root {
+  /* ---------- type ---------- */
+  --font-body: 'Source Sans 3 Variable', system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-body);
+  --font-brand: var(--font-body);
+  --font-nav: var(--font-body);
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo,
+    Consolas, monospace;
+
+  --font-size: 17.5px;
+  --line-height: 1.65;
+  --measure: 44rem;
+
+  --h1: 1.95rem;
+  --h2: 1.4rem;
+  --h3: 1.15rem;
+  --heading-weight: 600;
+  --heading-tracking: -0.011em;
+  --bold-weight: 600;
+
+  --brand-size: 0.95rem;
+  --brand-weight: 500;
+  --brand-tracking: -0.01em;
+  --brand-transform: none;
+
+  --nav-size: 0.82rem;
+  --nav-tracking: 0.01em;
+  --nav-transform: none;
+  --nav-gap: 1.15rem;
+
+  --code-inline-size: 0.86em;
+  --code-block-size: 0.82rem;
+  --code-padding: 0.9rem 1rem;
+  --math-size: 1.04em;
+
+  --quote-style: normal;
+
+  /* ---------- spacing ---------- */
+  --radius: 4px;
+  --gutter: 1.5rem;
+  --space-header: 1.1rem;
+  --space-main: 3.5rem;
+  --intro-gap: 4rem;
+  --intro-size: 1.75rem;
+  --intro-lede: 1.12rem;
+  --list-gap: 2rem;
+  --list-title-size: 1.12rem;
+  --meta-size: 0.78rem;
+  --excerpt-size: 0.94rem;
+  --post-header-gap: 2.75rem;
+
+  /* ---------- colour: light ---------- */
+  --bg: #fbfcfb;
+  --fg: #33393a;
+  --fg-strong: #121818;
+  --fg-muted: #566060;
+  --fg-faint: #86908f;
+  --rule: #e2e8e5;
+  --rule-strong: #c5d0cb;
+  --accent: #1f6b4f;
+  --code-inline-bg: #f1f5f3;
+}
+
+/* ---------- colour: dark ----------
+   Set by the inline script in BaseLayout before first paint, from the
+   stored choice or the OS preference. */
+:root[data-theme='dark'] {
+  --bg: #101414;
+  --fg: #bcc4c2;
+  --fg-strong: #e9efec;
+  --fg-muted: #94a09d;
+  --fg-faint: #6e7b78;
+  --rule: #1f2726;
+  --rule-strong: #324039;
+  --accent: #63c39a;
+  --code-inline-bg: #171d1c;
+}
+
+pre {
+  background: var(--code-inline-bg);
+}

@@ -1,0 +1,42 @@
+---
+// Include on any page that may contain ```mermaid fences.
+// The library (~500kB) is dynamically imported, so pages without a
+// diagram never download it.
+---
+
+<script>
+  const nodes = () =>
+    Array.from(document.querySelectorAll<HTMLElement>('pre.mermaid'));
+
+  async function renderDiagrams() {
+    const els = nodes();
+    if (els.length === 0) return;
+
+    const { default: mermaid } = await import('mermaid');
+    const dark = document.documentElement.dataset.theme === 'dark';
+
+    for (const el of els) {
+      // Stash the source on first pass; mermaid overwrites textContent
+      // with the rendered SVG, so a re-render needs the original back.
+      if (!el.dataset.src) el.dataset.src = el.textContent ?? '';
+      el.textContent = el.dataset.src;
+      el.removeAttribute('data-processed');
+    }
+
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: dark ? 'dark' : 'neutral',
+      fontFamily: getComputedStyle(document.body).fontFamily,
+      themeVariables: {
+        // Match the diagram background to the page rather than mermaid's
+        // own default, which is a flat white/grey either way.
+        background: 'transparent',
+      },
+    });
+
+    await mermaid.run({ nodes: els });
+  }
+
+  renderDiagrams();
+  window.addEventListener('themechange', renderDiagrams);
+</script>

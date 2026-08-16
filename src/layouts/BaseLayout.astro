@@ -1,0 +1,94 @@
+---
+import { SITE } from '../consts';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+// Self-hosted, so no request ever leaves a visitor's browser for a font.
+// Both are variable fonts split into unicode-range subsets, so a reader
+// only downloads the Latin slice. The italic files are separate faces —
+// without them the browser fakes <em> by slanting the upright.
+import '@fontsource-variable/source-sans-3';
+import '@fontsource-variable/source-sans-3/wght-italic.css';
+import '@fontsource-variable/jetbrains-mono';
+import '../styles/theme.css';
+import '../styles/base.css';
+import 'katex/dist/katex.min.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Set on article pages so social cards say "article" not "website". */
+  type?: 'website' | 'article';
+}
+
+const {
+  title,
+  description = SITE.description,
+  type = 'website',
+} = Astro.props;
+
+const pageTitle = title ? `${title} — ${SITE.name}` : SITE.name;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? SITE.url);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={SITE.name}
+      href="/rss.xml"
+    />
+
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+
+    {/* Runs before first paint so there is no flash of the wrong theme. */}
+    <script is:inline>
+      (() => {
+        const root = document.documentElement;
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia(
+          '(prefers-color-scheme: dark)',
+        ).matches;
+        root.dataset.theme = stored ?? (prefersDark ? 'dark' : 'light');
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+
+    <script>
+      // Theme toggle. Persists the explicit choice; otherwise the inline
+      // script above keeps following the OS setting.
+      const root = document.documentElement;
+      document
+        .querySelector('.theme-toggle')
+        ?.addEventListener('click', () => {
+          const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+          root.dataset.theme = next;
+          localStorage.setItem('theme', next);
+          window.dispatchEvent(
+            new CustomEvent('themechange', { detail: next }),
+          );
+        });
+    </script>
+  </body>
+</html>

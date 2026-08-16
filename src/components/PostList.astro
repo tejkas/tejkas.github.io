@@ -1,0 +1,43 @@
+---
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  posts: {
+    id: string;
+    data: { title: string; description: string; pubDate: Date; tags: string[] };
+  }[];
+  /** Post titles are <h2> on the blog index, <h3> under a heading at home. */
+  headingLevel?: 2 | 3;
+}
+
+const { posts, headingLevel = 2 } = Astro.props;
+const Heading = `h${headingLevel}` as 'h2' | 'h3';
+---
+
+<ul class="post-list">
+  {
+    posts.map((post) => (
+      <li class="post-item">
+        <Heading>
+          <a class="post-link" href={`/blog/${post.id}/`}>
+            {post.data.title}
+          </a>
+        </Heading>
+        <div class="post-meta">
+          <FormattedDate date={post.data.pubDate} />
+          {post.data.tags.length > 0 && (
+            <>
+              <span class="sep" aria-hidden="true">
+                ·
+              </span>
+              {post.data.tags.map((tag) => (
+                <span class="tag">#{tag}</span>
+              ))}
+            </>
+          )}
+        </div>
+        <p class="post-excerpt">{post.data.description}</p>
+      </li>
+    ))
+  }
+</ul>

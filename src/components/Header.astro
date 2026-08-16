@@ -1,0 +1,34 @@
+---
+import { SITE, NAV } from '../consts';
+
+const path = Astro.url.pathname;
+const isCurrent = (href: string) =>
+  href === '/' ? path === '/' : path.startsWith(href);
+---
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">{SITE.name}</a>
+
+    <nav class="site-nav" aria-label="Main">
+      {
+        NAV.map((item) => (
+          <a
+            href={item.href}
+            aria-current={isCurrent(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle colour theme"
+      >
+        <span class="icon-light" aria-hidden="true">☾</span>
+        <span class="icon-dark" aria-hidden="true">☀</span>
+      </button>
+    </nav>
+  </div>
+</header>

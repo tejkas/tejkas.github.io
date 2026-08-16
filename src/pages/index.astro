@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+import { SITE, LINKS } from '../consts';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, SITE.recentPostCount);
+---
+
+<BaseLayout>
+  <section class="intro">
+    {/* The name is already in the masthead, so it isn't repeated here.
+        Kept for screen readers and search results, which both expect
+        every page to declare exactly one h1. */}
+    <h1 class="visually-hidden">{SITE.name}</h1>
+    <p class="intro-lede">{SITE.tagline}</p>
+    <div class="intro-links">
+      {
+        LINKS.filter((l) => l.label !== 'RSS').map((link) => (
+          <a href={link.href} rel="me noopener">
+            {link.label}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-label">Recent posts</h2>
+    {
+      posts.length > 0 ? (
+        <PostList posts={posts} headingLevel={3} />
+      ) : (
+        <p>Nothing published yet.</p>
+      )
+    }
+  </section>
+</BaseLayout>

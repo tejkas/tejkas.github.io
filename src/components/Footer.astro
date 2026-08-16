@@ -1,0 +1,22 @@
+---
+import { SITE, LINKS } from '../consts';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© {year} {SITE.name}</span>
+    <span>
+      {
+        LINKS.map((link, i) => (
+          <>
+            {i > 0 && <span aria-hidden="true"> · </span>}
+            <a href={link.href} rel="me noopener">
+              {link.label}
+            </a>
+          </>
+        ))
+      }
+    </span>
+  </div>
+</footer>

@@ -1,0 +1,56 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Mermaid from '../components/Mermaid.astro';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { title, description, pubDate, updatedDate, tags } = post.data;
+---
+
+<BaseLayout title={title} description={description} type="article">
+  <a class="back-link" href="/blog">← All posts</a>
+
+  <article>
+    <header class="post-header">
+      <h1>{title}</h1>
+      <div class="post-meta">
+        <FormattedDate date={pubDate} />
+        {
+          updatedDate && (
+            <>
+              <span class="sep" aria-hidden="true">
+                ·
+              </span>
+              <span>
+                updated <FormattedDate date={updatedDate} />
+              </span>
+            </>
+          )
+        }
+        {
+          tags.length > 0 && (
+            <>
+              <span class="sep" aria-hidden="true">
+                ·
+              </span>
+              {tags.map((tag) => (
+                <span class="tag">#{tag}</span>
+              ))}
+            </>
+          )
+        }
+      </div>
+    </header>
+
+    <div class="post-body">
+      <slot />
+    </div>
+  </article>
+
+  <Mermaid />
+</BaseLayout>

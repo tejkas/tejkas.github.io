@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, LINKS, EMAIL } from '../consts';
+---
+
+<BaseLayout title="About" description={`About ${SITE.name}.`}>
+  <h1>About</h1>
+
+  <p>
+    Hi, this is {SITE.name}. I'm documenting my projects, learning notes, and
+    thoughts here.
+  </p>
+
+  <p>
+    Most of what I write up here starts as something I was confused about and
+    had to work through — interpretability experiments, systems performance
+    work, and whatever else I've been reading. Replace this paragraph with what
+    you actually want people to know.
+  </p>
+
+  <h2>Contact</h2>
+  <ul>
+    {
+      LINKS.filter((link) => link.label !== 'RSS').map((link) => (
+        <li>
+          <a href={link.href} rel="me noopener">
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+    <li><a href={`mailto:${EMAIL}`}>{EMAIL}</a></li>
+  </ul>
+</BaseLayout>
