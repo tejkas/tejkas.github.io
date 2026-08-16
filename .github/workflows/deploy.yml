@@ -31,7 +31,22 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
 
-      - run: npm ci
+      # `npm install`, not `npm ci`, on purpose.
+      #
+      # Sharp (Astro's image optimiser) pulls platform-specific binaries
+      # whose own deps npm resolves differently per OS: on macOS it nests
+      # @emnapi under @bruits/satteri-wasm32-wasi, on Linux it hoists them
+      # to the top level and re-resolves `^1.11.1` to whatever patch is
+      # newest. A lockfile generated on one OS therefore never satisfies
+      # `npm ci` on the other, and pinning the exact version just moves
+      # the breakage to the next upstream patch release.
+      #
+      # `npm install` honours the lockfile for everything it can and heals
+      # only that optional platform subtree. The trade-off is that those
+      # few binaries aren't byte-pinned across builds — which for a static
+      # site that produces the same HTML either way is not worth the
+      # recurring red X.
+      - run: npm install --no-audit --no-fund
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
