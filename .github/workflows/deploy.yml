@@ -23,9 +23,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Read from .nvmrc so CI and your machine can't drift apart. They
+      # must match: npm 10 and npm 11 resolve the same lockfile into
+      # different trees, and `npm ci` fails outright on the mismatch.
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version-file: .nvmrc
           cache: npm
 
       - run: npm ci
