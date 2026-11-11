@@ -54,7 +54,7 @@
 <circle cx="567.7" cy="148.8" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
 <circle cx="588.8" cy="130.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
 <circle cx="610.0" cy="118.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
-<text x="622.0" y="122.1" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >rotary half, 64 wide</text>
+<text x="622.0" y="122.1" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >rotary half, 64-dim</text>
 <text x="622.0" y="137.1" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >median 0.904</text>
 <polyline points="60.0,215.8 81.2,184.9 102.3,228.8 123.5,200.0 144.6,200.9 165.8,225.2 186.9,187.0 208.1,162.7 229.2,221.5 250.4,210.5 271.5,192.5 292.7,191.6 313.8,142.1 335.0,179.9 356.2,190.2 377.3,154.7 398.5,171.1 419.6,166.9 440.8,197.1 461.9,108.7 483.1,199.0 504.2,143.3 525.4,198.4 546.5,193.3 567.7,117.3 588.8,132.8 610.0,172.9" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="60.0" cy="215.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
@@ -84,7 +84,7 @@
 <circle cx="567.7" cy="117.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
 <circle cx="588.8" cy="132.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
 <circle cx="610.0" cy="172.9" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
-<text x="622.0" y="176.9" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >latent half, 512 wide</text>
+<text x="622.0" y="176.9" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >latent half, 512-dim</text>
 <text x="622.0" y="191.9" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >median 0.523</text>
 <line x1="60" y1="72" x2="78" y2="72" stroke="#eb6834" stroke-width="2"/>
 <text x="84.0" y="76.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >rotary half</text>

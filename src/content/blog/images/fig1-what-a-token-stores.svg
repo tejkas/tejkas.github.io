@@ -31,16 +31,16 @@
 <line x1="312.8" y1="200" x2="312.8" y2="212" stroke="#eb6834" stroke-width="1"/>
 <text x="312.8" y="226.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >k<tspan baseline-shift="super" font-size="9">R</tspan></text>
 <text x="180.0" y="252.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >All 16 heads read the same 576 numbers. Keys and values for every head are rebuilt from c;</text>
-<text x="180.0" y="268.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >the 64-wide k<tspan baseline-shift="super" font-size="9">R</tspan> (rotary half) is shared by all heads and never passes through a head's projection.</text>
+<text x="180.0" y="268.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >the 64-dim k<tspan baseline-shift="super" font-size="9">R</tspan> (rotary half) is shared by all heads and never passes through a head's projection.</text>
 <text x="24.0" y="316.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >score of token t</text>
 <text x="180.0" y="316.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >=</text>
 <text x="202.0" y="316.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-style="italic">q′ · c<tspan baseline-shift="sub" font-size="10">t</tspan></text>
 <rect x="202" y="322" width="58" height="3" fill="#2a78d6"/>
-<text x="231.0" y="338.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >512 wide</text>
+<text x="231.0" y="338.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >512-dim</text>
 <text x="280.0" y="316.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >+</text>
 <text x="302.0" y="316.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-style="italic">q<tspan baseline-shift="super" font-size="10">R</tspan> · k<tspan baseline-shift="super" font-size="10">R</tspan><tspan baseline-shift="sub" font-size="10">t</tspan></text>
 <rect x="302" y="322" width="66" height="3" fill="#eb6834"/>
-<text x="335.0" y="338.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >64 wide</text>
+<text x="335.0" y="338.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >64-dim</text>
 <text x="395.0" y="316.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >— the absorbed query q′ scores the latent directly;</text>
 <text x="395.0" y="332.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >a per-head key never exists.</text>
 </svg>
