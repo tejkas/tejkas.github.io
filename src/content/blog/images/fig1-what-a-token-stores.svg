@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="350" viewBox="0 0 760 350" role="img" aria-label="What one token stores per layer: 2,048 numbers on Mistral-7B, 576 on DeepSeek-V2-Lite">
+<rect width="760" height="350" fill="#fcfcfb"/>
+<text x="24.0" y="34.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >What one token stores, per layer</text>
+<text x="24.0" y="54.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >Every KV-cache method that ranks tokens by their keys assumes the top row.</text>
+<text x="24.0" y="99.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >Mistral-7B (GQA)</text>
+<path d="M180.0,84.0 H210.2 Q210.2,84.0 210.2,84.0 V106.0 Q210.2,106.0 210.2,106.0 H180.0 Z" fill="#898781"/>
+<path d="M212.2,84.0 H241.5 Q241.5,84.0 241.5,84.0 V106.0 Q241.5,106.0 241.5,106.0 H212.2 Z" fill="#898781"/>
+<path d="M243.5,84.0 H272.8 Q272.8,84.0 272.8,84.0 V106.0 Q272.8,106.0 272.8,106.0 H243.5 Z" fill="#898781"/>
+<path d="M274.8,84.0 H304.0 Q304.0,84.0 304.0,84.0 V106.0 Q304.0,106.0 304.0,106.0 H274.8 Z" fill="#898781"/>
+<path d="M306.0,84.0 H335.2 Q335.2,84.0 335.2,84.0 V106.0 Q335.2,106.0 335.2,106.0 H306.0 Z" fill="#898781"/>
+<path d="M337.2,84.0 H366.5 Q366.5,84.0 366.5,84.0 V106.0 Q366.5,106.0 366.5,106.0 H337.2 Z" fill="#898781"/>
+<path d="M368.5,84.0 H397.8 Q397.8,84.0 397.8,84.0 V106.0 Q397.8,106.0 397.8,106.0 H368.5 Z" fill="#898781"/>
+<path d="M399.8,84.0 H425.0 Q429.0,84.0 429.0,88.0 V102.0 Q429.0,106.0 425.0,106.0 H399.8 Z" fill="#898781"/>
+<path d="M430.0,84.0 H460.2 Q460.2,84.0 460.2,84.0 V106.0 Q460.2,106.0 460.2,106.0 H430.0 Z" fill="#c3c2b7"/>
+<path d="M462.2,84.0 H491.5 Q491.5,84.0 491.5,84.0 V106.0 Q491.5,106.0 491.5,106.0 H462.2 Z" fill="#c3c2b7"/>
+<path d="M493.5,84.0 H522.8 Q522.8,84.0 522.8,84.0 V106.0 Q522.8,106.0 522.8,106.0 H493.5 Z" fill="#c3c2b7"/>
+<path d="M524.8,84.0 H554.0 Q554.0,84.0 554.0,84.0 V106.0 Q554.0,106.0 554.0,106.0 H524.8 Z" fill="#c3c2b7"/>
+<path d="M556.0,84.0 H585.2 Q585.2,84.0 585.2,84.0 V106.0 Q585.2,106.0 585.2,106.0 H556.0 Z" fill="#c3c2b7"/>
+<path d="M587.2,84.0 H616.5 Q616.5,84.0 616.5,84.0 V106.0 Q616.5,106.0 616.5,106.0 H587.2 Z" fill="#c3c2b7"/>
+<path d="M618.5,84.0 H647.8 Q647.8,84.0 647.8,84.0 V106.0 Q647.8,106.0 647.8,106.0 H618.5 Z" fill="#c3c2b7"/>
+<path d="M649.8,84.0 H675.0 Q679.0,84.0 679.0,88.0 V102.0 Q679.0,106.0 675.0,106.0 H649.8 Z" fill="#c3c2b7"/>
+<text x="305.0" y="122.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >keys, 8 heads × 128</text>
+<text x="555.0" y="122.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >values, 8 heads × 128</text>
+<text x="688.0" y="99.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >2,048</text>
+<text x="180.0" y="144.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >32 query heads read in groups of 4; each group has its own key and value.</text>
+<text x="24.0" y="191.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >DeepSeek-V2-Lite (MLA)</text>
+<path d="M180.0,176.0 H300.0 Q304.0,176.0 304.0,180.0 V194.0 Q304.0,198.0 300.0,198.0 H180.0 Z" fill="#2a78d6"/>
+<path d="M306.0,176.0 H316.6 Q320.6,176.0 320.6,180.0 V194.0 Q320.6,198.0 316.6,198.0 H306.0 Z" fill="#eb6834"/>
+<text x="242.5" y="191.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >latent c, 512 numbers</text>
+<text x="328.6" y="191.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >576</text>
+<line x1="312.8" y1="200" x2="312.8" y2="212" stroke="#eb6834" stroke-width="1"/>
+<text x="312.8" y="226.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >k<tspan baseline-shift="super" font-size="9">R</tspan></text>
+<text x="180.0" y="252.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >All 16 heads read the same 576 numbers. Keys and values for every head are rebuilt from c;</text>
+<text x="180.0" y="268.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >the 64-wide k<tspan baseline-shift="super" font-size="9">R</tspan> (rotary half) is shared by all heads and never passes through a head's projection.</text>
+<text x="24.0" y="316.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >score of token t</text>
+<text x="180.0" y="316.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >=</text>
+<text x="202.0" y="316.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-style="italic">q′ · c<tspan baseline-shift="sub" font-size="10">t</tspan></text>
+<rect x="202" y="322" width="58" height="3" fill="#2a78d6"/>
+<text x="231.0" y="338.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >512 wide</text>
+<text x="280.0" y="316.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >+</text>
+<text x="302.0" y="316.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-style="italic">q<tspan baseline-shift="super" font-size="10">R</tspan> · k<tspan baseline-shift="super" font-size="10">R</tspan><tspan baseline-shift="sub" font-size="10">t</tspan></text>
+<rect x="302" y="322" width="66" height="3" fill="#eb6834"/>
+<text x="335.0" y="338.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >64 wide</text>
+<text x="395.0" y="316.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >— the absorbed query q′ scores the latent directly;</text>
+<text x="395.0" y="332.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >a per-head key never exists.</text>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" role="img" aria-label="Per-layer rank correlation of the full attention score with its rotary term and its latent term">
+<rect width="760" height="340" fill="#fcfcfb"/>
+<text x="24.0" y="34.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >Which half of the score carries the ranking, layer by layer</text>
+<text x="24.0" y="54.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >Spearman rank correlation between the full score q·k and each of its two terms alone, over context tokens.</text>
+<line x1="60" y1="247.5" x2="610" y2="247.5" stroke="#e1e0d9" stroke-width="1"/>
+<text x="52.0" y="251.5" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.25</text>
+<line x1="60" y1="195.0" x2="610" y2="195.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="52.0" y="199.0" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.50</text>
+<line x1="60" y1="142.5" x2="610" y2="142.5" stroke="#e1e0d9" stroke-width="1"/>
+<text x="52.0" y="146.5" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.75</text>
+<line x1="60" y1="90.0" x2="610" y2="90.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="52.0" y="94.0" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >1.00</text>
+<line x1="60" y1="300" x2="610" y2="300" stroke="#c3c2b7" stroke-width="1"/>
+<text x="60.0" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0</text>
+<text x="102.3" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >2</text>
+<text x="144.6" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >4</text>
+<text x="186.9" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >6</text>
+<text x="229.2" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >8</text>
+<text x="271.5" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >10</text>
+<text x="313.8" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >12</text>
+<text x="356.2" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >14</text>
+<text x="398.5" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >16</text>
+<text x="440.8" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >18</text>
+<text x="483.1" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >20</text>
+<text x="525.4" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >22</text>
+<text x="567.7" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >24</text>
+<text x="610.0" y="316.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >26</text>
+<text x="335.0" y="332.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >layer</text>
+<polyline points="60.0,104.1 81.2,113.9 102.3,94.8 123.5,107.4 144.6,106.6 165.8,100.3 186.9,110.2 208.1,121.7 229.2,98.4 250.4,97.6 271.5,113.1 292.7,102.0 313.8,144.6 335.0,107.0 356.2,108.5 377.3,122.8 398.5,124.7 419.6,122.6 440.8,106.6 461.9,159.9 483.1,107.4 504.2,126.3 525.4,111.8 546.5,107.0 567.7,148.8 588.8,130.1 610.0,118.1" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="60.0" cy="104.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="81.2" cy="113.9" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="102.3" cy="94.8" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="123.5" cy="107.4" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="144.6" cy="106.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="165.8" cy="100.3" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="186.9" cy="110.2" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="208.1" cy="121.7" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="229.2" cy="98.4" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="250.4" cy="97.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="271.5" cy="113.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="292.7" cy="102.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="313.8" cy="144.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="335.0" cy="107.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="356.2" cy="108.5" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="377.3" cy="122.8" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="398.5" cy="124.7" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="419.6" cy="122.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="440.8" cy="106.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="461.9" cy="159.9" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="483.1" cy="107.4" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="504.2" cy="126.3" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="525.4" cy="111.8" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="546.5" cy="107.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="567.7" cy="148.8" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="588.8" cy="130.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="610.0" cy="118.1" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<text x="622.0" y="122.1" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >rotary half, 64 wide</text>
+<text x="622.0" y="137.1" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >median 0.904</text>
+<polyline points="60.0,215.8 81.2,184.9 102.3,228.8 123.5,200.0 144.6,200.9 165.8,225.2 186.9,187.0 208.1,162.7 229.2,221.5 250.4,210.5 271.5,192.5 292.7,191.6 313.8,142.1 335.0,179.9 356.2,190.2 377.3,154.7 398.5,171.1 419.6,166.9 440.8,197.1 461.9,108.7 483.1,199.0 504.2,143.3 525.4,198.4 546.5,193.3 567.7,117.3 588.8,132.8 610.0,172.9" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="60.0" cy="215.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="81.2" cy="184.9" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="102.3" cy="228.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="123.5" cy="200.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="144.6" cy="200.9" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="165.8" cy="225.2" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="186.9" cy="187.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="208.1" cy="162.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="229.2" cy="221.5" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="250.4" cy="210.5" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="271.5" cy="192.5" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="292.7" cy="191.6" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="313.8" cy="142.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="335.0" cy="179.9" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="356.2" cy="190.2" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="377.3" cy="154.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="398.5" cy="171.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="419.6" cy="166.9" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="440.8" cy="197.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="461.9" cy="108.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="483.1" cy="199.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="504.2" cy="143.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="525.4" cy="198.4" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="546.5" cy="193.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="567.7" cy="117.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="588.8" cy="132.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="610.0" cy="172.9" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="622.0" y="176.9" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >latent half, 512 wide</text>
+<text x="622.0" y="191.9" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >median 0.523</text>
+<line x1="60" y1="72" x2="78" y2="72" stroke="#eb6834" stroke-width="2"/>
+<text x="84.0" y="76.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >rotary half</text>
+<line x1="180" y1="72" x2="198" y2="72" stroke="#2a78d6" stroke-width="2"/>
+<text x="204.0" y="76.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >latent half</text>
+</svg>

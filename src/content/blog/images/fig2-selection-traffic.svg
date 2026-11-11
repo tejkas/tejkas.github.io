@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" role="img" aria-label="Selection-step read traffic in units of the budget t for GQA, MLA as published, and MLA scoring the rotary half">
+<rect width="760" height="340" fill="#fcfcfb"/>
+<text x="24.0" y="34.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >What the selection step reads, in units of the token budget t = S / c</text>
+<text x="24.0" y="54.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >Their derivation gives the selection step half the budget; the other half goes to attending the chosen tokens.</text>
+<line x1="60" y1="250.4" x2="720" y2="250.4" stroke="#e1e0d9" stroke-width="1"/>
+<text x="52.0" y="254.4" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.25t</text>
+<line x1="60" y1="210.8" x2="720" y2="210.8" stroke="#e1e0d9" stroke-width="1"/>
+<text x="52.0" y="214.8" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.50t</text>
+<line x1="60" y1="171.2" x2="720" y2="171.2" stroke="#e1e0d9" stroke-width="1"/>
+<text x="52.0" y="175.2" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.75t</text>
+<line x1="60" y1="131.7" x2="720" y2="131.7" stroke="#e1e0d9" stroke-width="1"/>
+<text x="52.0" y="135.7" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >1.00t</text>
+<line x1="60" y1="210.8" x2="720" y2="210.8" stroke="#52514e" stroke-width="1"/>
+<text x="500.0" y="204.8" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >t/2: their budget</text>
+<line x1="60" y1="290" x2="720" y2="290" stroke="#c3c2b7" stroke-width="1"/>
+<text x="170.0" y="308.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >c = 16</text>
+<path d="M132.0,290.0 V214.8 Q132.0,210.8 136.0,210.8 H152.0 Q156.0,210.8 156.0,214.8 V290.0 Z" fill="#898781"/>
+<text x="144.0" y="204.8" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.50</text>
+<path d="M158.0,290.0 V125.5 Q158.0,121.5 162.0,121.5 H178.0 Q182.0,121.5 182.0,125.5 V290.0 Z" fill="#52514e"/>
+<text x="170.0" y="115.5" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >1.06</text>
+<path d="M184.0,290.0 V252.5 Q184.0,248.5 188.0,248.5 H204.0 Q208.0,248.5 208.0,252.5 V290.0 Z" fill="#eb6834"/>
+<text x="196.0" y="242.5" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.26</text>
+<text x="390.0" y="308.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >c = 64</text>
+<path d="M352.0,290.0 V214.8 Q352.0,210.8 356.0,210.8 H372.0 Q376.0,210.8 376.0,214.8 V290.0 Z" fill="#898781"/>
+<text x="364.0" y="204.8" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.50</text>
+<path d="M378.0,290.0 V116.7 Q378.0,112.7 382.0,112.7 H398.0 Q402.0,112.7 402.0,116.7 V290.0 Z" fill="#52514e"/>
+<text x="390.0" y="106.7" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >1.12</text>
+<path d="M404.0,290.0 V239.2 Q404.0,235.2 408.0,235.2 H424.0 Q428.0,235.2 428.0,239.2 V290.0 Z" fill="#eb6834"/>
+<text x="416.0" y="229.2" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.35</text>
+<text x="610.0" y="308.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >c = 256</text>
+<path d="M572.0,290.0 V214.8 Q572.0,210.8 576.0,210.8 H592.0 Q596.0,210.8 596.0,214.8 V290.0 Z" fill="#898781"/>
+<text x="584.0" y="204.8" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.50</text>
+<path d="M598.0,290.0 V118.7 Q598.0,114.7 602.0,114.7 H618.0 Q622.0,114.7 622.0,118.7 V290.0 Z" fill="#52514e"/>
+<text x="610.0" y="108.7" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >1.11</text>
+<path d="M624.0,290.0 V242.1 Q624.0,238.1 628.0,238.1 H644.0 Q648.0,238.1 648.0,242.1 V290.0 Z" fill="#eb6834"/>
+<text x="636.0" y="232.1" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >0.33</text>
+<rect x="60" y="72" width="10" height="10" rx="2" fill="#898781"/>
+<text x="76.0" y="81.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >GQA (Mistral), as published</text>
+<rect x="290" y="72" width="10" height="10" rx="2" fill="#52514e"/>
+<text x="306.0" y="81.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >MLA, as published: reads all 576</text>
+<rect x="540" y="72" width="10" height="10" rx="2" fill="#eb6834"/>
+<text x="556.0" y="81.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal" font-family="system-ui, -apple-system, Segoe UI, sans-serif" >MLA, k<tspan baseline-shift="super" font-size="9">R</tspan> with pages of 2: reads 64</text>
+</svg>
