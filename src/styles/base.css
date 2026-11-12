@@ -554,8 +554,27 @@ figcaption {
 
 h2:hover .heading-anchor,
 h3:hover .heading-anchor,
+h4:hover .heading-anchor,
 .heading-anchor:focus {
   opacity: 1;
+}
+
+.heading-anchor:hover {
+  color: var(--accent);
+}
+
+/* Touch screens have no hover, so keep the anchor faintly visible there. */
+@media (hover: none) {
+  .heading-anchor {
+    opacity: 0.6;
+  }
+}
+
+/* Leave a little room above a heading when a link jumps to it. */
+h2,
+h3,
+h4 {
+  scroll-margin-top: 1.5rem;
 }
 
 /* ---------- accessibility ---------- */

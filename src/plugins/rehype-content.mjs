@@ -74,3 +74,34 @@ export function rehypeTableScroll() {
     });
   };
 }
+
+/**
+ * Appends a "#" link to each section heading so a reader can copy a URL
+ * that lands on that section. Needs heading ids, so rehypeHeadingIds must
+ * run first. The link is plain HTML: no JavaScript.
+ */
+export function rehypeHeadingAnchors() {
+  const levels = new Set(['h2', 'h3', 'h4']);
+  return (tree) => {
+    visit(tree, 'element', (node) => {
+      if (!levels.has(node.tagName)) return;
+      const id = node.properties?.id;
+      if (!id) return;
+      node.children.push({
+        type: 'element',
+        tagName: 'a',
+        properties: {
+          className: ['heading-anchor'],
+          href: `#${id}`,
+          ariaLabel: `Link to section: ${textOf(node).trim()}`,
+        },
+        children: [{ type: 'text', value: '#' }],
+      });
+    });
+  };
+}
+
+function textOf(node) {
+  if (node.type === 'text') return node.value;
+  return (node.children ?? []).map(textOf).join('');
+}
